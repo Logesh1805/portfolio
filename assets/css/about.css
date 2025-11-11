@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row1{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 50px;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 1300px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.row1 h2{
+    color: #2D3E50;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+.col1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+
+}
+.col1 a{ 
+    margin-left: 40px;
+    text-decoration: none;
+    color: #616262;
+    font-size: 17px;
+}
+.col1 a:hover{
+    color: blue;
+    transition: all 1s;
+    transform: translateY(-10px);
+}
+.dropdown{
+  display: none;
+  position: absolute;
+  background-color: rgb(84, 83, 83);
+  list-style: none;
+  border: 0;
+  padding: 0;
+  height: 130px;
+  width: 110px;
+  margin-top: -2px;
+  
+}
+.dropdown li a{
+    color: #ffffff;
+    font-size: 16px;
+    margin: 10px;
+    margin-top: 22px;
+}
+.dropdown li{
+    margin-left: 0px;
+    margin-top: 10px;
+
+}
+.dropdown-container:hover .dropdown{
+  display: block;
+}
+.row1 button{
+    border: none;
+    background-color:rgb(255, 0, 221);
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    height: 45px;
+    width: 90px;
+    margin-top: 15px;
+    margin-right: 20px;
+    box-shadow: 0 0 5px rgba(252, 0, 219, 1) ;
+}
+#row2{
+    position: relative;
+    z-index: -2;
+    top: 0px;
+}
+.row1{
+    position: absolute;
+    z-index: 1;
+}
+.row3{
+    display: flex;
+    position:absolute;
+    z-index: 2;
+    top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+    .col5{
+        border-radius: 80% 83% 82% 79%;
+        box-shadow: 0 0 15px rgba(252, 0, 219, 1) ;
+        background: linear-gradient(90deg,rgba(252, 0, 219, 1) 0%, rgba(83, 93, 237, 1) 100%);
+      }
+     .col5 img{
+        border-radius: 80%;
+        background: linear-gradient(90deg,rgba(252, 0, 219, 1) 0%, rgba(83, 93, 237, 1) 100%);
+     }
+.col6{
+    margin-left: 50px;
+    margin-top: 80px;
+}     
+.col6 button{
+    height: 40px;
+    width: 100px;
+    background-color:rgba(252, 0, 219, 1) ;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.col6 h1{
+    color: #2D3E50;
+}
+.col6 p{
+    color: #6f6f70;
+}
+#row4{
+    display: flex;
+    position:absolute;
+    z-index: 2;
+    top: 600px;
+
+}
+#row4 h1{
+    text-align: center;
+    font-size: 3rem;
+}
+#row4 h1 span{
+      background: linear-gradient(90deg,rgba(252, 0, 219, 1) 0%, rgba(83, 93, 237, 1) 100%);
+            -webkit-background-clip: text;
+           background-clip: text;
+           -webkit-text-fill-color: transparent;
+           color: transparent;
+}
+.container{
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+.heading{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+.bar{
+    font-size: 23px;
+}
+.technical-bars .bar{
+    margin: 40px 0;
+}
+
+.technical-bars .bar:first-child{
+    margin-top: 0px;
+}
+.technical-bars .bar:last-child{
+    margin-bottom: opx;
+}
+.technical-bars .bar .info{
+    margin-bottom: 5px;
+}
+.progress-line-html{
+    display: flex;
+    width: 100%;
+    
+      max-width: 500px;
+      height:20px;
+      background: #b5b4b4;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 255, 136, 0.6);
+}
+
+.progress-line-html div{
+   width: 0%;
+     background: linear-gradient(90deg,rgba(252, 0, 219, 1) 0%, rgba(83, 93, 237, 1) 100%);
+      border-radius: 20px;
+      animation: loading 4s linear forwards;
+}
+  @keyframes loading {
+      0% { width: 0%; }
+      100% { width: 80%; }
+    }
+#row5{
+
+    width: 550px;
+    margin-left: -40px;
+    
+}    
+.head{
+    margin-top: 100px;
+}   
+#col6 {
+    display: flex;
+    justify-content: space-between;
+}
+.col8{
+    background-color: rgb(202, 201, 201);
+    height: 100px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    margin-left: -7px;
+    padding-top: 30px;
+    margin-top: 60px;
+}
+.col6 i{
+    margin-top: 35px;
+}
+#col7{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}

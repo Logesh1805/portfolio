@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.row1{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 50px;
+    margin-top: 10px;
+    text-align: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 1300px;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.row1 h2{
+    color: #2D3E50;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+.col1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+
+}
+.col1 a{ 
+    margin-left: 40px;
+    text-decoration: none;
+    color: #616262;
+    font-size: 17px;
+}
+.col1 a:hover{
+    color: blue;
+    transition: all 1s;
+    transform: translateY(-10px);
+}
+.dropdown{
+  display: none;
+  position: absolute;
+  background-color: rgb(84, 83, 83);
+  list-style: none;
+  border: 0;
+  padding: 0;
+  height: 130px;
+  width: 110px;
+  margin-top: -1px;
+}
+.dropdown li a{
+    color: #ffffff;
+    font-size: 18px;
+    margin: 10px;
+    margin-top: 22px;
+}
+.dropdown li{
+    margin-left: 0px;
+    margin-top: 10px;
+
+}
+.dropdown-container:hover .dropdown{
+  display: block;
+}
+.row1 button{
+    border: none;
+    background-color:rgb(255, 0, 221);
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    height: 45px;
+    width: 90px;
+    margin-top: 15px;
+    margin-right: 20px;
+    box-shadow: 0 0 5px rgba(252, 0, 219, 1) ;
+}
+#row2{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #dedfdf;
+    height: 1050px;
+}
+#row3{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.col3{
+    margin-left: 200px;
+    height: 300px;
+}
+.col3 img{
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 25px;
+}
+.col4{
+    width: 600px;
+    padding-left: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 25px;
+    padding-top: 30px;
+    border-radius: 0px 10px 10px 0px;
+}
+.col5{
+    display: flex;
+}
+.col5 h3{
+    margin-top: -10px;
+    margin-left: 10px;
+}
