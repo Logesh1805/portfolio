@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap');
 
+
 body{
     margin: 0;
     padding: 0;
@@ -81,6 +82,11 @@ body{
     margin-top: 15px;
     margin-right: 20px;
     box-shadow: 0 0 5px rgba(252, 0, 219, 1) ;
+}
+.row1 button:hover{
+  background-color: white;
+  color:rgb(255, 0, 221);
+  border:1px solid rgb(255, 0, 221); ;
 }
 .row2 {
    position: relative;
