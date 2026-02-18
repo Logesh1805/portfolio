@@ -87,6 +87,9 @@ body {
 .hero-content p { color: #6f6f70; margin: 20px 0; line-height: 1.6; }
 
 .hero-btns { display: flex; gap: 15px; }
+.hero-btns a{
+    text-decoration: none;
+}
 .btn-outline {
     background: transparent; border: 2px solid #ff00dd; color: #ff00dd;
     padding: 10px 30px; border-radius: 5px; font-weight: 600; transition: 0.3s;

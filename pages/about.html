@@ -9,52 +9,34 @@
 </head>
 <body>
     <header>
-    <div class="row1">
-        <h2>Logesh</h2>
-        <!-- 1. Added Hamburger Icon -->
-        <div class="menu-icon" id="menu-icon">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        
-        <nav class="col1" id="nav-links">
-            <a href="../index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="project.html">Project</a>
-            <div class="dropdown-container">
-                <a class="dropdtn" href="#">Pages</a>
-                <ul class="dropdown">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="project.html">Project</a></li>
-                    <li><a href="./contact.html">Contact Us</a></li>
-                </ul>
+        <div class="row1">
+            <h2 class="logo">Logesh</h2>
+            <!-- Hamburger Icon -->
+            <div class="menu-icon" id="menu-icon">
+                <i class="fa-solid fa-bars"></i>
             </div>
-            <a href="./contact.html">Contact</a>
-            <!-- Moved button inside nav for mobile view -->
-            <button class="nav-btn mobile-only-btn">Contact</button>
-        </nav>
-        <button class="nav-btn desktop-only-btn">Contact</button>
-    </div>
-</header>
+            
+            <nav class="col1" id="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="./about.html" class="active-nav">About</a>
+                <a href="project.html">Project</a>
+                <div class="dropdown-container">
+                    <a class="dropdtn" href="#">Pages <i class="fa-solid fa-caret-down fa-xs"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+              
+            </nav>
+            <a href="./contact.html" class="nav-btn desktop-only-btn">Contact</a>
+        </div>
+    </header>
 
-<!-- ... rest of your main content ... -->
-
-<!-- 2. Added JavaScript to Toggle Menu -->
-<script>
-   
-     const menuIcon = document.getElementById('menu-icon');
-    const navLinks = document.getElementById('nav-links');
-
-    menuIcon.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        // Change icon from bars to X when open
-        const icon = menuIcon.querySelector('i');
-        icon.classList.toggle('fa-bars');
-        icon.classList.toggle('fa-xmark');
-    });
-</script>
     <main>
-        <!-- About Section -->
+        <!-- About Hero Section -->
         <section class="about-hero">
             <div class="col5">
                 <div class="img-frame">
@@ -63,8 +45,39 @@
             </div>
             <div class="col6">
                 <h1>About <span>Myself</span></h1>
-                <p>I am a passionate Java Full Stack Developer with a strong foundation in both frontend and backend development. I specialize in Java, Spring Boot, and RESTful APIs for backend systems, and HTML, CSS, JavaScript, and modern frameworks for building responsive user interfaces.</p>
-                <button class="contact-btn">Contact Us</button>
+                <p>I am a passionate **Java Full Stack Developer** with a strong foundation in both frontend and backend development. I specialize in Java, Spring Boot, and RESTful APIs for backend systems, and modern frontend technologies for building responsive user interfaces.</p>
+                <a href="./contact.html" class="contact-btn">Contact Me</a>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education-section">
+            <h2 class="heading">Education</h2>
+            <div class="edu-container">
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                    <div class="edu-details">
+                        <h3>Bachelor of Engineering (B.E.)</h3>
+                        <p class="specialization">Computer Science and Engineering</p>
+                        <p class="institution">Anna University, S.K.P Engineering College, Tiruvannamalai</p>
+                        <div class="edu-meta">
+                            <span>2021 – 2025</span>
+                            <span class="score">CGPA: 7.9</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+                    <div class="edu-details">
+                        <h3>Higher Secondary Certification (HSC)</h3>
+                        <p class="institution">Government Boys Higher Secondary School, Kilpennathur</p>
+                        <div class="edu-meta">
+                            <span>Graduated: 2021</span>
+                            <span class="score">Percentage: 67.6%</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -96,24 +109,36 @@
                 <h2 class="heading">Non-Technical</h2>
                 <div class="skills-grid">
                     <div class="skill-card">
-                        <i class="fa-solid fa-handshake fa-2xl"></i>
+                        <i class="fa-solid fa-handshake"></i>
                         <h3>Teamwork</h3>
                     </div>
                     <div class="skill-card">
-                        <i class="fa-solid fa-brain fa-2xl"></i>
+                        <i class="fa-solid fa-brain"></i>
                         <h3>Problem Solving</h3>
                     </div>
                     <div class="skill-card">
-                        <i class="fa-solid fa-clock fa-2xl"></i>
+                        <i class="fa-solid fa-clock"></i>
                         <h3>Time Management</h3>
                     </div>
                     <div class="skill-card">
-                        <i class="fa-solid fa-seedling fa-2xl"></i>
+                        <i class="fa-solid fa-seedling"></i>
                         <h3>Personal Growth</h3>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.getElementById('nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = menuIcon.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-xmark');
+        });
+    </script>
 </body>
 </html>

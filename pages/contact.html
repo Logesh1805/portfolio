@@ -12,7 +12,6 @@
         <nav class="navbar">
             <h2 class="logo">Logesh</h2>
             
-            <!-- Hamburger Menu Toggle -->
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <label for="menu-toggle" class="hamburger">
                 <span></span>
@@ -23,69 +22,60 @@
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
-                <li><a href="project.html">Project</a></li>
+                <li><a href="./project.html">Project</a></li>
                 <li class="dropdown-container">
-                    <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+                    <a href="#">Pages <i class="fa-solid fa-chevron-down fa-2xs"></i></a>
                     <ul class="dropdown">
                         <li><a href="../index.html">Home</a></li>
                         <li><a href="./about.html">About</a></li>
-                        <li><a href="project.html">Project</a></li>
+                        <li><a href="./project.html">Project</a></li>
                         <li><a href="./contact.html">Contact Us</a></li>
                     </ul>
                 </li>
                 <li><a href="./contact.html" class="nav-btn-mobile">Contact</a></li>
             </ul>
-            <button class="nav-btn-desktop">Contact</button>
+            <a href="./contact.html" class="nav-btn-desktop">Contact</a>
         </nav>
     </header>
 
-    <main class="contact-container">
-        <div class="contact-info">
-            <h1>GET IN TOUCH</h1>
-            <p>Have a question or want to work together? Fill out the form below!</p>
-            
-            <div class="info-card">
-                <div class="info-item">
-                    <i class="fa-solid fa-house fa-xl"></i>
-                    <div class="info-text">
-                        <h2>T.Nagar</h2>
-                        <p>Chennai, Tamil Nadu</p>
-                    </div>
-                </div>
-                
-                <div class="info-item">
-                    <i class="fa-solid fa-phone fa-xl"></i>
-                    <div class="info-text">
-                        <h2>+91 93420 00000</h2>
-                    </div>
-                </div>
-            </div>
-
-            <div class="social-links">
-                <a href="#"><i class="fa-brands fa-linkedin fa-2x" style="color: #045ffb;"></i> LinkedIn</a>
-                <a href="#"><i class="fa-solid fa-n fa-2x" style="color: #005eff;"></i> Naukri</a>
-            </div>
+    <main class="contact-wrapper">
+        <div class="contact-header">
+            <h1>Let's <span>Connect</span></h1>
+            <p>I'm currently open to new opportunities and collaborations. <br>Reach out through any of the platforms below!</p>
         </div>
 
-        <div class="contact-form">
-            <h2>Send a Message</h2>
-            <form>
-                <div class="form-row">
-                    <input type="text" placeholder="First Name" required>
-                    <input type="text" placeholder="Last Name" required>
-                </div>
-                <div class="form-row">
-                    <input type="email" placeholder="Email" required>
-                    <input type="tel" placeholder="Phone">
-                </div>
-                <div class="form-group">
-                    <input type="text" placeholder="Address">
-                </div>
-                <div class="form-group">
-                    <textarea placeholder="Type your Message Here" rows="5"></textarea>
-                </div>
-                <button type="submit" class="submit-btn">Submit Now</button>
-            </form>
+        <div class="contact-grid">
+            <!-- Email Card -->
+            <a href="mailto:loki1805200@gmail.com" class="contact-card">
+                <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                <h3>Email Me</h3>
+                <p>loki1805200@gmail.com</p>
+                <span class="action-text">Send a mail <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+
+            <!-- Phone Card -->
+            <a href="tel:+919342821247" class="contact-card">
+                <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                <h3>Call Me</h3>
+                <p>+91 9342821247</p>
+                <span class="action-text">Call now <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+
+            <!-- Location Card -->
+            <div class="contact-card no-link">
+                <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                <h3> Location</h3>
+                <p>Velachery, Chennai, Tamil Nadu</p>
+                <span class="action-text">Available Worldwide</span>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <a href="https://www.linkedin.com/in/logesh-k-2b03b7287/" target="_blank" class="contact-card linkedin">
+                <div class="icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
+                <h3>LinkedIn</h3>
+                <p>Logesh</p>
+                <span class="action-text">Let's Network <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
         </div>
     </main>
 </body>
