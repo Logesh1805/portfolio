@@ -3,94 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact - Logesh</title>
     <link rel="stylesheet" href="../css/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap');
-</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
-    <div class="row1">
-            <h2>Logesh</h2>
-                <div class="col1">
-                    <a href="../index.html">Home</a>
-                    <a href="./about.html">About</a>
-                    <a href="project.html">Project</a>
-                    <div id="col2">
-                            <div class="dropdown-container">
-                                <a class="dropdtn" href="#">Pages</a>
-                                <ul class="dropdown">
-                                <li><a href="../index.html">Home</a></li>
-                                <li><a href="./about.html">About</a></li>
-                                <li><a href="project.html">Project</a></li>
-                                <li><a href="../pages/contact.html">Contact Us</a></li>
-                                </ul>
-                            </div>
-                    </div>
+        <nav class="navbar">
+            <h2 class="logo">Logesh</h2>
+            
+            <!-- Hamburger Menu Toggle -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
 
-                    <a href="./contact.html">Contact</a>
-                </div>
-            <button>Contact</button>
-    </div>
-    <div class="row2">
-        <div id="row3">
-            <div>
-                <h1>GET IN TOUCH</h1>
-           <p>Have a question or want to work together? Fill out the form below!</p>
-            </div>
-            <div id="row5">
-                <div class="col8">
-                  <i class="fa-solid fa-house fa-xl"></i>
-                        <div>
-                            <h2>T.Nagar</h2>
-                            <p>Chennai, Tamil Nadu</p>
-                        </div>
-                </div>
-                <div class="col8">
-                   <i class="fa-solid fa-phone fa-xl"></i>
-                   <div class="col9">
-                    <h2>9342000000</h2>
-                   </div>
-                </div>
-                <div>
-
-                </div>
-            </div>
-           <div class="col7">
-             <span><i class="fa-brands fa-linkedin fa-2x" style="color: #045ffb;"></i>Linked In</span>
-             <span><i class="fa-solid fa-n fa-2x" style="color: #005eff;"></i>
-             Naukri</span>
-           </div>
-        </div>
-        <div id="row4" >
-           <h2>Contact</h2>
-           <div class="col4">
-                <div class="col3">
-                    <input placeholder="First Name" >
-                </div>
-                <div class="col3">
-                    <input placeholder="Last Name">
-                </div>
-           </div>
-           <div class="col4">
-                <div class="col3">
-                    <input placeholder="Email">
-                </div>
-                <div class="col3">
-                    <input placeholder="Phone">
-                </div>
-           </div>
-           <div class="col5">
-                <input placeholder="Address">
-           </div>
-           <div class="col6">
-                <input placeholder="Type your Message Here">
-           </div>
-           <button>Submit</button>
-        </div>
-    </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li class="dropdown-container">
+                    <a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="./contact.html">Contact Us</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html" class="nav-btn-mobile">Contact</a></li>
+            </ul>
+            <button class="nav-btn-desktop">Contact</button>
+        </nav>
     </header>
+
+    <main class="contact-container">
+        <div class="contact-info">
+            <h1>GET IN TOUCH</h1>
+            <p>Have a question or want to work together? Fill out the form below!</p>
+            
+            <div class="info-card">
+                <div class="info-item">
+                    <i class="fa-solid fa-house fa-xl"></i>
+                    <div class="info-text">
+                        <h2>T.Nagar</h2>
+                        <p>Chennai, Tamil Nadu</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <i class="fa-solid fa-phone fa-xl"></i>
+                    <div class="info-text">
+                        <h2>+91 93420 00000</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-linkedin fa-2x" style="color: #045ffb;"></i> LinkedIn</a>
+                <a href="#"><i class="fa-solid fa-n fa-2x" style="color: #005eff;"></i> Naukri</a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send a Message</h2>
+            <form>
+                <div class="form-row">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <div class="form-row">
+                    <input type="email" placeholder="Email" required>
+                    <input type="tel" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Address">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Type your Message Here" rows="5"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Now</button>
+            </form>
+        </div>
+    </main>
 </body>
 </html>

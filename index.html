@@ -3,59 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Logesh - Portfolio</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
-    <style></style>
-   
 </head>
 <body>
-<section id="row2">
-    <header >
-        
-        <div class="row1  ">
-            <h2>Logesh</h2>
-                <div class="col1">
-                    <a href="index.html">Home</a>
-                    <a href="./pages/about.html">About</a>
-                    <a href="./pages/project.html">Project</a>
-                    <div id="col2">
-                            <div class="dropdown-container">
-                                <a class="dropdtn" href="#">Pages</a>
-                                <ul class="dropdown">
-                                <li><a href="./index.html">Home</a></li>
-                                <li><a href="./pages/about.html">About</a></li>
-                                <li><a href="./pages/project.html">Project</a></li>
-                                <li><a href="./pages/contact.html">Contact Us</a></li>
-                                </ul>
-                            </div>
-                    </div>
 
-                    <a href="./pages/contact.html">Contact</a>
+<section id="hero-section">
+    <header>
+        <div class="row1">
+            <h2 class="logo">Logesh</h2>
+            
+            <!-- Mobile Hamburger Icon -->
+            <div class="menu-icon" id="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <nav class="col1" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="./pages/about.html">About</a>
+                <a href="./pages/project.html">Project</a>
+                
+                <div class="dropdown-container">
+                    <a class="dropdtn" href="#">Pages <i class="fa-solid fa-caret-down fa-xs"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="./pages/about.html">About</a></li>
+                        <li><a href="./pages/project.html">Project</a></li>
+                        <li><a href="./pages/contact.html">Contact Us</a></li>
+                    </ul>
                 </div>
-            <button>Contact</button>
+                
+                <a href="./pages/contact.html">Contact</a>
+                <!-- <button class="nav-btn mobile-btn">Contact</button> -->
+            </nav>
+
+            <button class="nav-btn desktop-btn">Contact</button>
         </div>
     </header>
 
-    <div id="row3">
-        <div class="col4">
+    <div class="hero-container">
+        <div class="hero-content">
             <h2>Hi, I'm Logesh</h2>
-            <h1>Java Full Stact <span>Developer</span></h1>
-            <p>Hi, I’m Logesh K, a passionate and creative web designer and developer dedicated to crafting visually appealing, user-friendly, and responsive websites. I enjoy turning complex ideas into simple, elegant digital experiences using modern web technologies</p>
-            <div class="col3">
-                <button>Project</button>
-                <button>Contact <i class="fa-solid fa-phone fa-sm" id="iconc" style="color: #ffffff;"></i></i></button>
+            <h1>Java Full Stack <span>Developer</span></h1>
+            <p>I’m a passionate and creative web designer and developer dedicated to crafting visually appealing, user-friendly, and responsive websites. I enjoy turning complex ideas into simple, elegant digital experiences.</p>
+            <div class="hero-btns">
+                <button class="btn-outline">Project</button>
+                <button class="btn-solid">Contact <i class="fa-solid fa-phone fa-sm"></i></button>
             </div>
         </div>
-        <div class="col5">
-            <img src="./images/logesh.jpg" alt="" height="500px" width="auto" >
+        <div class="hero-image">
+            <div class="img-shape">
+                <img src="./images/logesh.jpg" alt="Logesh Profile">
+            </div>
         </div>
-        
     </div>
-
 </section>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<!-- 1. First Load Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- 2. Then add your custom logic in a SEPARATE tag -->
+<script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navLinks = document.getElementById('nav-links');
+
+    menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        const icon = menuIcon.querySelector('i');
+        icon.classList.toggle('fa-bars');
+        icon.classList.toggle('fa-xmark');
+    });
+</script>
 </body>
 </html>

@@ -3,82 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projects - Logesh</title>
     <link rel="stylesheet" href="../css/project.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
-  <style>
-@import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap');
-</style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
-    <div class="row1">
-            <h2>Logesh</h2>
-                <div class="col1">
-                    <a href="../index.html">Home</a>
-                    <a href="./about.html">About</a>
-                    <a href="project.html">Project</a>
-                    <div id="col2">
-                            <div class="dropdown-container">
-                                <a class="dropdtn" href="#">Pages</a>
-                                <ul class="dropdown">
-                                <li><a href="../index.html">Home</a></li>
-                                <li><a href="./about.html">About</a></li>
-                                <li><a href="project.html">Project</a></li>
-                                <li><a href="../pages/contact.html">Contact Us</a></li>
-                                </ul>
-                            </div>
-                    </div>
+        <div class="row1">
+            <h2 class="logo">Logesh</h2>
+            
+            <!-- Mobile Hamburger Icon -->
+            <div class="menu-icon" id="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
 
-                    <a href="./contact.html">Contact</a>
+            <nav class="col1" id="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="project.html" class="active-link">Project</a>
+                <div class="dropdown-container">
+                    <a class="dropdtn" href="#">Pages <i class="fa-solid fa-caret-down fa-xs"></i></a>
+                    <ul class="dropdown">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="../pages/contact.html">Contact Us</a></li>
+                    </ul>
                 </div>
-            <button>Contact</button>
-    </div>
-
+                <!-- Contact link visible in mobile menu list -->
+                <a href="./contact.html" class="mobile-only-link">Contact</a>
+                <button class="nav-btn mobile-btn">Hire Me</button>
+            </nav>
+            
+            <!-- Desktop Only Button -->
+            <button class="nav-btn desktop-btn">Contact</button>
+        </div>
     </header>
     
-    <div id="row2">
-       <div id="row3">
-                <div class="col3">
-                  <img src="../images/product.jpg" alt="" width="400px" height="275px" >
+    <main id="row2">
+        <!-- Project 1 -->
+        <div class="project-card">
+            <div class="col3">
+                <img src="../images/product.jpg" alt="E-commerce Project">
+            </div>
+            <div class="col4">
+                <div class="project-meta">
+                    <i class="fa-solid fa-circle-user fa-lg" style="color: #005eff;"></i>
+                    <span>Logesh</span>
                 </div>
-                <div class="col4">
-                    <div class="col5">
-                        <i class="fa-solid fa-user fa-lg" style="color: #005eff;"></i>
-                        <h3>Admin</h3>
-                    </div>
-                    <h2>E-COMMERCE PRODUCT CATALOG (MY SQL)</h2>
-                    <p>An e-commerce product catalog is a centralized, organized database that stores all the detailed information</p>
+                <h2>E-COMMERCE SYSTEM</h2>
+                <div class="tags">
+                    <span>HTML</span> <span>CSS</span> <span>JavaScript</span>
                 </div>
-       </div>
-       <div id="row3">
-                <div class="col3">
-                  <img src="../images/image1.jpg" alt="" width="400px" height="275px" >
-                </div>
-                <div class="col4">
-                    <div class="col5">
-                       <i class="fa-solid fa-user fa-lg" style="color: #005eff;"></i>
-                        <h3>Admin</h3>
-                    </div>
-                    <h2>THE HOLIDAY SPECIAL</h2>
-                    <p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</p>
-                </div>
-       </div>
-       <div id="row3">
-                <div class="col3">
-                  <img src="../images/image1.jpg" alt="" width="400px" height="275px" >
-                </div>
-                <div class="col4">
-                    <div class="col5">
-                       <i class="fa-solid fa-user fa-lg" style="color: #005eff;"></i>
-                        <h3>Admin</h3>
-                    </div>
-                    <h2>THE HOLIDAY SPECIAL</h2>
-                    <p>Create a blog post subtitle that summarizes your post in a few short, punchy sentences and entices your audience to continue reading....</p>
-                </div>
-       </div>
-       
-    </div>
+                <p>Built a responsive e-commerce web application replicating core Amazon features. Designed reusable React components for product listing, search, and filtering.</p>
+                <a href="#" class="view-btn">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
 
+        <!-- Project 2 -->
+        <div class="project-card">
+            <div class="col3">
+                <img src="../images/recipe.png" alt="Recipe Finder">
+            </div>
+            <div class="col4">
+                <div class="project-meta">
+                    <i class="fa-solid fa-circle-user fa-lg" style="color: #005eff;"></i>
+                    <span>Logesh</span>
+                </div>
+                <h2>Recipe Finder Web App</h2>
+                <div class="tags">
+                    <span>React JS</span> <span>API Integration</span>
+                </div>
+                <p>Built a React-based application using Spoonacular API to search recipes by ingredients and dietary preferences. Implemented dynamic filtering and responsive UI.</p>
+                <a href="#" class="view-btn">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.getElementById('nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = menuIcon.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-xmark');
+        });
+    </script>
 </body>
 </html>
